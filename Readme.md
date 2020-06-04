@@ -1,9 +1,11 @@
-## Container Run
+## Install Vim PlugIns
+vim :PlugInstall
 
-sudo docker container run -it -p 3000:3000 func4plus/next-app zsh 
+:CocInstall coc-python
 
-# Install
+## Install Python Language Server (MPLS)
+:CocConfig 
 
-npm install 
-
-npm run dev 
+{
+"python.jediEnabled": false
+}
